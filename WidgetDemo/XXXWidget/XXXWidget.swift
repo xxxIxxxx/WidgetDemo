@@ -31,7 +31,7 @@ struct XXXProvider: TimelineProvider {
         var entrys: [XXXSimpleEntry] = []
         let currentData = Date()
         
-        /// 提供当前时间后 1个小时内  每一秒的状态 (已经提供了3600个状态，太多会不展示卡死)
+        /// 提供当前时间后 1 个小时内  每一秒的状态 (已经提供了 3600 个状态，太多会不展示卡死)
         for i in 0...60*60 {
             guard let entryDate = Calendar.current.date(byAdding: .second, value: i, to: currentData) else {
                 return
@@ -58,17 +58,34 @@ struct XXXSimpleEntry: TimelineEntry {
 /// widget 展示 view
 struct XXXWidgetEntryView : View {
     var entry: XXXProvider.Entry
-    /// 返回在这个时间 (entry.date)    你想要展示的widegt样式
+    
+    ///当前展示 widget 的大小
+    @Environment(\.widgetFamily) var family
+    
+    /// 返回在这个时间 (entry.date)    你想要展示的 widegt 样式
     var body: some View {
         ZStack {
             
             Color.orange.edgesIgnoringSafeArea(.all)
-            VStack {
-                Text(entry.displayTime)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.blue)
-                    ///配置点击链接会在主工程收到拉起事件
-                    .widgetURL(URL(string: "widgetDemo://789"))
+            
+            switch family {
+            case .systemSmall:
+                VStack {
+                    Text(entry.displayTime)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.blue)
+                        ///配置点击链接会在主工程收到拉起事件
+                        .widgetURL(URL(string: "widgetDemo://789"))
+                }
+            default:
+                VStack {
+                    Text(entry.displayTime)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.blue)
+                        ///配置点击链接会在主工程收到拉起事件
+                        .widgetURL(URL(string: "widgetDemo://789"))
+                        .font(Font.largeTitle)
+                }
             }
         }
     }
@@ -107,6 +124,7 @@ struct AllWidget: WidgetBundle {
     var body: some Widget {
         XXXWidget()
     }
+    
 }
 
 

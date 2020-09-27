@@ -3,7 +3,7 @@
 
 iOS14 Widget
 
-# [Demo 下载](https://github.com/xxxIxxxx/WidgetDemo)
+# [简书链接](https://www.jianshu.com/p/84c180963ac6)
 
 ### 这个是用户不可配置的，没有编辑选项的 widget。稍后会上传可编辑动态的 widget
 
@@ -126,5 +126,3 @@ struct AllWidget: WidgetBundle {
 
 ![关联主工程数据](https://upload-images.jianshu.io/upload_images/2331323-5fcaf3ede4232577.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
-# [Demo 下载](https://github.com/xxxIxxxx/WidgetDemo)

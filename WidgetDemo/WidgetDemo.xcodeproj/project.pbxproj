@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1984451F2520253400C5E4F9 /* WidgetLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984451E2520253400C5E4F9 /* WidgetLaunchViewController.swift */; };
+		1984453425202F4400C5E4F9 /* XXXData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984453325202F4400C5E4F9 /* XXXData.swift */; };
+		1984453525202F4400C5E4F9 /* XXXData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984453325202F4400C5E4F9 /* XXXData.swift */; };
 		19D88AA3251CC0AB0023CB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D88AA2251CC0AB0023CB97 /* AppDelegate.swift */; };
 		19D88AA7251CC0AB0023CB97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D88AA6251CC0AB0023CB97 /* ViewController.swift */; };
 		19D88AAA251CC0AB0023CB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D88AA8251CC0AB0023CB97 /* Main.storyboard */; };
@@ -60,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1984451E2520253400C5E4F9 /* WidgetLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLaunchViewController.swift; sourceTree = "<group>"; };
+		1984453325202F4400C5E4F9 /* XXXData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXData.swift; sourceTree = "<group>"; };
 		19D88A9F251CC0AB0023CB97 /* WidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D88AA2251CC0AB0023CB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D88AA6251CC0AB0023CB97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +148,8 @@
 			children = (
 				19D88AA2251CC0AB0023CB97 /* AppDelegate.swift */,
 				19D88AA6251CC0AB0023CB97 /* ViewController.swift */,
+				1984451E2520253400C5E4F9 /* WidgetLaunchViewController.swift */,
+				1984453325202F4400C5E4F9 /* XXXData.swift */,
 				19D88AA8251CC0AB0023CB97 /* Main.storyboard */,
 				19D88AAB251CC0AD0023CB97 /* Assets.xcassets */,
 				19D88AAD251CC0AD0023CB97 /* LaunchScreen.storyboard */,
@@ -350,6 +357,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D88AA7251CC0AB0023CB97 /* ViewController.swift in Sources */,
+				1984451F2520253400C5E4F9 /* WidgetLaunchViewController.swift in Sources */,
+				1984453425202F4400C5E4F9 /* XXXData.swift in Sources */,
 				19D88AA3251CC0AB0023CB97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1984453525202F4400C5E4F9 /* XXXData.swift in Sources */,
 				19D88AE1251CC0BF0023CB97 /* XXXWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2YN4UPAGRL;
 				INFOPLIST_FILE = WidgetDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -562,7 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2YN4UPAGRL;
 				INFOPLIST_FILE = WidgetDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,7 +672,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2YN4UPAGRL;
 				INFOPLIST_FILE = XXXWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -684,7 +694,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2YN4UPAGRL;
 				INFOPLIST_FILE = XXXWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

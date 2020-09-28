@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .green
         
         let tipLab = UILabel()
-        tipLab.text = "点击屏幕主动刷新 widget"
+        tipLab.text = "点击屏幕主动刷新   widget"
         view.addSubview(tipLab)
         tipLab.frame = CGRect(x: 20, y: 100, width: 300, height: 20)
         

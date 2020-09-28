@@ -22,6 +22,18 @@
 		19D88AE1251CC0BF0023CB97 /* XXXWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D88AE0251CC0BF0023CB97 /* XXXWidget.swift */; };
 		19D88AE3251CC0C00023CB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D88AE2251CC0C00023CB97 /* Assets.xcassets */; };
 		19D88AE7251CC0C00023CB97 /* XXXWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19D88AD9251CC0BF0023CB97 /* XXXWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		19E43AC72521888100D14AFD /* AnimalWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 19F07BB225207D2700249B9F /* AnimalWidget.intentdefinition */; };
+		19E43AD22521888F00D14AFD /* AnimalWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 19F07BB225207D2700249B9F /* AnimalWidget.intentdefinition */; };
+		19F07BAD25207D2700249B9F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D88ADB251CC0BF0023CB97 /* WidgetKit.framework */; };
+		19F07BAE25207D2700249B9F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D88ADD251CC0BF0023CB97 /* SwiftUI.framework */; };
+		19F07BB125207D2700249B9F /* AnimalWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F07BB025207D2700249B9F /* AnimalWidget.swift */; };
+		19F07BB425207D2800249B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F07BB325207D2800249B9F /* Assets.xcassets */; };
+		19F07BBA25207D2800249B9F /* AnimalWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19F07BAC25207D2700249B9F /* AnimalWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		19F07C032520814B00249B9F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F07C002520814B00249B9F /* IntentHandler.swift */; };
+		19FDCDA125218CE4001E227F /* XXXData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984453325202F4400C5E4F9 /* XXXData.swift */; };
+		19FDCDAA2521B146001E227F /* AnimalWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 19F07BB225207D2700249B9F /* AnimalWidget.intentdefinition */; };
+		19FDCDE32521C1C6001E227F /* AnimalWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F07BB025207D2700249B9F /* AnimalWidget.swift */; };
+		19FDCE252521D701001E227F /* AnimalWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F07BB025207D2700249B9F /* AnimalWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +58,13 @@
 			remoteGlobalIDString = 19D88AD8251CC0BF0023CB97;
 			remoteInfo = XXXWidgetExtension;
 		};
+		19F07BB825207D2800249B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D88A97251CC0AB0023CB97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F07BAB25207D2700249B9F;
+			remoteInfo = AnimalWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				19F07BBA25207D2800249B9F /* AnimalWidgetExtension.appex in Embed App Extensions */,
 				19D88AE7251CC0C00023CB97 /* XXXWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -84,6 +104,12 @@
 		19D88AE0251CC0BF0023CB97 /* XXXWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXWidget.swift; sourceTree = "<group>"; };
 		19D88AE2251CC0C00023CB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D88AE4251CC0C00023CB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F07BAC25207D2700249B9F /* AnimalWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AnimalWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F07BB025207D2700249B9F /* AnimalWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalWidget.swift; sourceTree = "<group>"; };
+		19F07BB225207D2700249B9F /* AnimalWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = AnimalWidget.intentdefinition; sourceTree = "<group>"; };
+		19F07BB325207D2800249B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19F07BB525207D2800249B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F07C002520814B00249B9F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +143,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19F07BA925207D2700249B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F07BAE25207D2700249B9F /* SwiftUI.framework in Frameworks */,
+				19F07BAD25207D2700249B9F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +162,7 @@
 				19D88AB8251CC0AD0023CB97 /* WidgetDemoTests */,
 				19D88AC3251CC0AD0023CB97 /* WidgetDemoUITests */,
 				19D88ADF251CC0BF0023CB97 /* XXXWidget */,
+				19F07BAF25207D2700249B9F /* AnimalWidget */,
 				19D88ADA251CC0BF0023CB97 /* Frameworks */,
 				19D88AA0251CC0AB0023CB97 /* Products */,
 			);
@@ -139,6 +175,7 @@
 				19D88AB5251CC0AD0023CB97 /* WidgetDemoTests.xctest */,
 				19D88AC0251CC0AD0023CB97 /* WidgetDemoUITests.xctest */,
 				19D88AD9251CC0BF0023CB97 /* XXXWidgetExtension.appex */,
+				19F07BAC25207D2700249B9F /* AnimalWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +232,18 @@
 			path = XXXWidget;
 			sourceTree = "<group>";
 		};
+		19F07BAF25207D2700249B9F /* AnimalWidget */ = {
+			isa = PBXGroup;
+			children = (
+				19F07BB325207D2800249B9F /* Assets.xcassets */,
+				19F07BB525207D2800249B9F /* Info.plist */,
+				19F07BB225207D2700249B9F /* AnimalWidget.intentdefinition */,
+				19F07BB025207D2700249B9F /* AnimalWidget.swift */,
+				19F07C002520814B00249B9F /* IntentHandler.swift */,
+			);
+			path = AnimalWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +260,7 @@
 			);
 			dependencies = (
 				19D88AE6251CC0C00023CB97 /* PBXTargetDependency */,
+				19F07BB925207D2800249B9F /* PBXTargetDependency */,
 			);
 			name = WidgetDemo;
 			productName = WidgetDemo;
@@ -270,6 +320,23 @@
 			productReference = 19D88AD9251CC0BF0023CB97 /* XXXWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		19F07BAB25207D2700249B9F /* AnimalWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F07BBB25207D2800249B9F /* Build configuration list for PBXNativeTarget "AnimalWidgetExtension" */;
+			buildPhases = (
+				19F07BA825207D2700249B9F /* Sources */,
+				19F07BA925207D2700249B9F /* Frameworks */,
+				19F07BAA25207D2700249B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimalWidgetExtension;
+			productName = AnimalWidgetExtension;
+			productReference = 19F07BAC25207D2700249B9F /* AnimalWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -293,6 +360,9 @@
 					19D88AD8251CC0BF0023CB97 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					19F07BAB25207D2700249B9F = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = 19D88A9A251CC0AB0023CB97 /* Build configuration list for PBXProject "WidgetDemo" */;
@@ -312,6 +382,7 @@
 				19D88AB4251CC0AD0023CB97 /* WidgetDemoTests */,
 				19D88ABF251CC0AD0023CB97 /* WidgetDemoUITests */,
 				19D88AD8251CC0BF0023CB97 /* XXXWidgetExtension */,
+				19F07BAB25207D2700249B9F /* AnimalWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -349,6 +420,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19F07BAA25207D2700249B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F07BB425207D2800249B9F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -359,7 +438,9 @@
 				19D88AA7251CC0AB0023CB97 /* ViewController.swift in Sources */,
 				1984451F2520253400C5E4F9 /* WidgetLaunchViewController.swift in Sources */,
 				1984453425202F4400C5E4F9 /* XXXData.swift in Sources */,
+				19FDCDAA2521B146001E227F /* AnimalWidget.intentdefinition in Sources */,
 				19D88AA3251CC0AB0023CB97 /* AppDelegate.swift in Sources */,
+				19FDCE252521D701001E227F /* AnimalWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +466,19 @@
 			files = (
 				1984453525202F4400C5E4F9 /* XXXData.swift in Sources */,
 				19D88AE1251CC0BF0023CB97 /* XXXWidget.swift in Sources */,
+				19E43AD22521888F00D14AFD /* AnimalWidget.intentdefinition in Sources */,
+				19FDCDE32521C1C6001E227F /* AnimalWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F07BA825207D2700249B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E43AC72521888100D14AFD /* AnimalWidget.intentdefinition in Sources */,
+				19F07C032520814B00249B9F /* IntentHandler.swift in Sources */,
+				19FDCDA125218CE4001E227F /* XXXData.swift in Sources */,
+				19F07BB125207D2700249B9F /* AnimalWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +499,11 @@
 			isa = PBXTargetDependency;
 			target = 19D88AD8251CC0BF0023CB97 /* XXXWidgetExtension */;
 			targetProxy = 19D88AE5251CC0C00023CB97 /* PBXContainerItemProxy */;
+		};
+		19F07BB925207D2800249B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F07BAB25207D2700249B9F /* AnimalWidgetExtension */;
+			targetProxy = 19F07BB825207D2800249B9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -710,6 +809,50 @@
 			};
 			name = Release;
 		};
+		19F07BBC25207D2800249B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YN4UPAGRL;
+				INFOPLIST_FILE = AnimalWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxwidgetDemo.AnimalWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19F07BBD25207D2800249B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YN4UPAGRL;
+				INFOPLIST_FILE = AnimalWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxwidgetDemo.AnimalWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -754,6 +897,15 @@
 			buildConfigurations = (
 				19D88AE9251CC0C00023CB97 /* Debug */,
 				19D88AEA251CC0C00023CB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F07BBB25207D2800249B9F /* Build configuration list for PBXNativeTarget "AnimalWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F07BBC25207D2800249B9F /* Debug */,
+				19F07BBD25207D2800249B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

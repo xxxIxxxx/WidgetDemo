@@ -74,18 +74,17 @@ struct XXXWidgetEntryView : View {
                     Text(entry.displayTime)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.blue)
-                        ///配置点击链接会在主工程收到拉起事件
-                        .widgetURL(URL(string: "widgetDemo://789"))
-                }
+                }///配置点击链接会在主工程收到拉起事件
+                .widgetURL(URL(string: "widgetDemo://789"))
+                
             default:
                 VStack {
                     Text(entry.displayTime)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.blue)
-                        ///配置点击链接会在主工程收到拉起事件
-                        .widgetURL(URL(string: "widgetDemo://789"))
                         .font(Font.largeTitle)
-                }
+                }///配置点击链接会在主工程收到拉起事件
+                .widgetURL(URL(string: "widgetDemo://789"))
             }
         }
     }
@@ -123,6 +122,7 @@ struct AllWidget: WidgetBundle {
     @WidgetBundleBuilder
     var body: some Widget {
         XXXWidget()
+        AnimalWidget()
     }
     
 }

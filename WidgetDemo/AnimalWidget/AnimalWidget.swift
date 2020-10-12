@@ -37,17 +37,29 @@ struct AnimalProvider: IntentTimelineProvider {
             return
         }
         
-        let entry = AnimalSimpleEntry(date: entryDate, animal: XXXAnimal.animal(id, color: configuration.color))
-        
+        let entry = AnimalSimpleEntry(date: entryDate, animal: XXXAnimal.animal(id, color: configuration.color), imageUrlStr: "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1264411295,3959247407&fm=26&gp=0.jpg")
         let timeline = Timeline(entries: [entry], policy: .atEnd)
+        
         completion(timeline)
     }
+       
+}
+
+/// 同步下载图片，Widget 不能异步刷新
+func getImage(_ imgUrlString: String) -> UIImage? {
+    guard let data = try? Data(contentsOf: URL(string: imgUrlString)!) else {
+        print("图片下载失败")
+        return nil }
+    print("图片下载成功")
+    return UIImage(data: data)
 }
 
 struct AnimalSimpleEntry: TimelineEntry {
     let date: Date
     /// 新加自己需要的参数
     let animal: XXXAnimal
+    ///图片链接
+    var imageUrlStr: String = "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3381573685,1866477444&fm=26&gp=0.jpg"
 }
 
 struct AnimalWidgetEntryView : View {
@@ -70,6 +82,13 @@ struct AnimalWidgetEntryView : View {
                         .foregroundColor(.green)
                     
                     Text("这个是小的")
+                    
+                    Image(uiImage: getImage(entry.imageUrlStr) ?? UIImage(named: "aaaa")!)
+                        .resizable()
+                        .frame(width: 60,
+                               height: 60,
+                               alignment: .center)
+                    
                 }
             }///配置点击链接会在主工程收到拉起事件
             .widgetURL(URL(string: "widgetDemo://789"))
@@ -83,6 +102,13 @@ struct AnimalWidgetEntryView : View {
                     
                     Text(entry.animal.name)
                         .foregroundColor(.green)
+
+                    Image(uiImage: getImage(entry.imageUrlStr) ?? UIImage(named: "aaaa")!)
+                        .resizable()
+                        .frame(width: 60,
+                               height: 60,
+                               alignment: .center)
+                    
                 }
             }///配置点击链接会在主工程收到拉起事件
             .widgetURL(URL(string: "widgetDemo://789"))

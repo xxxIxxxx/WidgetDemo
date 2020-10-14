@@ -9,28 +9,21 @@ import Foundation
 import SwiftUI
 
 struct XXXData {
-    
-///注意要添加到 WidgetExtension      (option + command + 0 点击文件夹    在 Target Membership 勾选)
+    /// 注意要添加到 WidgetExtension      (option + command + 0 点击文件夹    在 Target Membership 勾选)
     
     static func displayData(_ date: Date = Date()) -> String {
-        
         let dateFoematter = DateFormatter()
         dateFoematter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let displayTime = dateFoematter.string(from: date)
         return "🐼🐼🐼\n\(displayTime)"
-        
     }
-    
 }
 
-
 struct XXXAnimal {
-    
     let id: String
     let name: String
     let avatar: String
     var color: Color = .white
-    
     
     static let panda = XXXAnimal(id: "panda", name: "panda", avatar: "🐼")
     static let lion = XXXAnimal(id: "lion", name: "lion", avatar: "🦁️")
@@ -52,7 +45,6 @@ struct XXXAnimal {
             animal = XXXAnimal(id: "cat", name: "cat", avatar: "🐱")
         }
         
-        
         switch color {
         case .black:
             animal.color = .black
@@ -65,7 +57,4 @@ struct XXXAnimal {
         }
         return animal
     }
-    
-    
 }
-

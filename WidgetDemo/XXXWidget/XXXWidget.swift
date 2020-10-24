@@ -23,13 +23,21 @@ struct XXXProvider: TimelineProvider {
 
     /// 根据时间线提供需要展示的状态
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        print("时间线刷新了" + "\(Date())")
+        // 这个刷新并不是每秒刷新
+        // 1. 下面提供的 300 个状态展示完了，可能会刷新
+        // 2. 系统发生变化 会自动刷新，你可以尝试改下手机时间看看
+        print("时间线刷新了" + "\(Date())" + "\("""
+                这个刷新并不是每秒刷新
+                 1. 下面提供的 300 个状态展示完了，可能会刷新
+                 2. 系统发生变化会自动刷新，你可以尝试改下手机时间看看
+                 3. 调用了 WidgetCenter.shared.reloadAllTimelines() 会刷新
+        """)")
 
         var entrys: [XXXSimpleEntry] = []
         let currentData = Date()
 
-        /// 提供当前时间后 1 个小时内  每一秒的状态 (已经提供了 3600 个状态，太多会不展示卡死)
-        for i in 0 ... 60 * 60 {
+        /// 提供当前时间后 5分钟内   每一秒的状态 (已经提供了 300 个状态，太多会不展示卡死)
+        for i in 0 ... 60 * 5 {
             guard let entryDate = Calendar.current.date(byAdding: .second, value: i, to: currentData) else {
                 return
             }
@@ -38,7 +46,7 @@ struct XXXProvider: TimelineProvider {
         let timeline = Timeline(entries: entrys, policy: .atEnd)
         completion(timeline)
 
-        /// 也可以在这里做网络请求去拿数据
+        /// 也可以在这里做网络请求去拿数据  然后把 completion(timeline) 下载你的网络回调里 就是数据处理完后准备好了刷新状态 在去调用 completion(timeline)
     }
 }
 
